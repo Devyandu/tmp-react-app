@@ -8,7 +8,7 @@ import Card from 'react-bootstrap/Card';
 export default function TopContentCarousel({topContentArray}){
     
          const jsxArray=topContentArray.map(item=>
-            <Carousel.Item>
+            <Carousel.Item key={item.img}>
         <Card style={{height:'40%'}}>
             <Card.Img variant="top" src={item.img} />
             <Card.Body>
